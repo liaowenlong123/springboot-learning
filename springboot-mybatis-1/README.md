@@ -1,0 +1,9 @@
+项目说明：
+一、该项目为springboot+mybatis的注解实现方式
+二、项目创建流程
+   1、添加依赖和maven插件：mybatis依赖、mysql依赖
+   2、添加实体类
+   3、添加mapper接口。注：该接口不加@Repository注解使用@Autowired注入会报错，但不影响结果
+   4、在入口类添加@MapperScan注解，该注解等价于在每个mapper接口添加@Mapper注解
+   5、在属性文件配置数据库连接
+   6、测试，使用@Autowired注入
